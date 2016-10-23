@@ -1,2 +1,14 @@
-# vr-nanodegree-project-1
-Udacity - VR Nanodegree - Project 1
+## VR Nanodegree - Project 1 - *My First VR App*
+##### Andrew Despres
+------
+This is a simple app that was built using a modified version of the GoogleVR Demo Scene. As a student I was prompted to change the "Hello World" text to include my name, as well as change the assigned behaviors of the bottom three buttons on the scene's button panel. Because this was my first foray into both Unity3D and C#, I decided to go beyond the assigned tasks by adding a new SpawnRandomSpheres method, as well change the button text at runtime to more accurately describe its action.
+
+#### Time to Completion
+
+The assigned tasks to this app took approximately 15 minutes to complete as I familiarized myself with the basics of the Unity3D interface. The additional modifications took approximately 1 hour, as I had to further experiment with the Unity3D interface, create a new prefab object, and learn how to access GameObject properties using C#.
+
+#### Completing the Project: Challenges and Accomplishments
+
+This standard requirements for this project were very straight forward. Probably the most difficult challenge was navigating the scene view using the mouse and WASD keys. The simplicity of this project is one of the contributing factors as to why I decided I wanted to try and modify the existing effects. To write the SpawnRandomSpheres method I started by reading through the code for the SpawnRandomCubes method that was included with the project. I then began adding in custom variables and rewriting the SpawnRandomCubes method to change the object to a sphere. When I first tried to run the code it didn't work. I received an error stating that a spherePrefab object did not exist. I switched back over to Unity3D from MonoDevelop and checked the prefab folder -- sure enough, only a cube prefab object existed. I then asked myself "well, how do I create a new prefab object?" I was able to find that answer in the Unity3D docs, and soon after I had a fully functional action that dropped spheres from the sky instead of cubes. I was stoked. To follow up on my recent success, I decided that I wanted to change the button text for the "Toggle Sun" and "Toggle Flashlight" buttons at runtime to better describe their current actions. To Solve this problem I had to figure out how to not only link a GameObject, in this case a button, to a variable, but also how to access the text property of the button. To solve this I turned to Google and found the answer on, appropriately enough, Unity Answers. In very little time I was able to write the code necessary to change the text at runtime when each button was tapped.
+
+Despite being a very simple application, having never used Unity3D or C# before, I was very proud of what I was able to accomplish in a short amount of time.
